@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Beispiele</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-
+    50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Verlinkung vom Stylesheet -->
+    <link rel="stylesheet" href="../styles/index_stylesheet.css">
+    <!--*Verlinkungen der Typescript Datei -->
+
+
+    <script src="../src/scripts.js"></script>
+   <!-- <script src="../src/test.js"></script> -->
+
+
+</head>
+<body id="koerper" class="hell">
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Unsere Seite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Stundenplan.html"> Stundenplan </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dasTeam.html" id="navbardrop" data-toggle="dropdown">
+                        Das Team
+
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Dennis Ksr</a>
+                        <a class="dropdown-item" href="#">Merve Damar</a>
+                        <a class="dropdown-item" href="#">Lennart Behrendt</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="workingexamples.html">Working Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usermanager.html">UserManager</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<!-- Liste der Sachen hinzugefügt und gelöscht werden -->
+<div class="container">
+    <h2 class="section-heading" id="überschrift">Hier sehen Sie unsere Praxisübungen</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Dennis Krs</li>
+        <li class="list-group-item">Lennart</li>
+        <li class="list-group-item">Merve</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <form id="add-user-form"></form>
+        <input id="addfirstname" class="col-md-3 ml-3" class="liste" type="text" placeholder="Firstname">
+        <input id="addlastname"  class="col-md-3 ml-1" class="liste" type="text" placeholder="Lastname">
+        <button class="col-md-2 ml-1 btn btn-info btn-sm" id="create-button" type="submit">Create</button>
+        <button class="col-md-2 ml-1 btn btn-info btn-sm" id="delete-button" type="submit">Delete</button>
+        </form>
+    </div>
+</div>
+<br>
+<hr class="section-heading-spacer">
+<br>
+<div class="container">
+    <!-- 3. Stelle von Binär Rechner -->
+    <input id="dual" class="col-md-3 ml-3" type="string"value="" placeholder="Geben sie eine Zahl ein">
+    <button class="col-md-2 ml-1 btn btn-info btn-sm" id="dualenter" type="submit">START!</button>
+    <br><br>
+
+    <!-- Noten eingeben -->
+    <input id="noten" class="col-md-3 ml-3" type="number" placeholder="Geben sie eine Notenzahl ein">
+    <button class="col-md-2 ml-1 btn btn-info btn-sm" id="notenenter" type="submit">Gib mir meine Note!</button>
+    <br>
+</div>
+<hr class="section-heading-spacer">
+<br>
+<!-- Sortieren von 3 Zahlen -->
+<div class="container"></div>
+<input id="erstezahl"  class="col-md-3 ml-1" class="numberlist" type="number" placeholder="Geben sie die erste Zahl ein">
+<input id="zweitezahl"  class="col-md-3 ml-1" class="numberlist" type="number" placeholder="Geben sie die zweite Zahl ein">
+<input id="drittezahl"  class="col-md-3 ml-1" class="numberlist" type="number" placeholder="Geben sie die dritte Zahl ein">
+<button class="col-md-2 ml-1 btn btn-info btn-sm" id="sortenter" type="submit">SORTIERE!</button>
+<hr class="section-heading-spacer">
+
+<div class="container">
+    <input id="einsquadrat"  class="col-md-3 ml-1" type="number" placeholder="Geben sie die erste Zahl ein">
+    <input id="zweiquadrat"  class="col-md-3 ml-1" type="number" placeholder="Geben sie die zweite Zahl ein">
+    <button class="col-md-2 ml-1 btn btn-info btn-sm" id="quadratenter" type="submit">Quadratiere!!</button>
+    <br>
+    <table id="quadrierttable">
+
+        <tr>
+            <th>Zahl</th>
+            <th>Quadrierte Zahl</th>
+        </tr>
+
+    </table>
+</div>
+<hr class="section-heading-spacer">
+<div class="container">
+    <input id="eingabefaktor"  class="col-md-3 ml-1" type="number" placeholder="Geben sie eine Zahl ein">
+    <button class="col-md-2 ml-1 btn btn-info btn-sm" id="faktorenter" type="submit">Faktor!</button>
+</div>
+<hr class="section-heading-spacer">
+<!-- TASCHENRECHNER -->
+
+<div class="container">
+    <h2 class="section-heading">Taschenrechner</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <label for="zahl1">Zahl1 eingeben:</label>
+            <input id="zahl1" class="form-control" type="number"/>
+            <label for="zahl2">Zahl2 eingeben:</label>
+            <input id="zahl2" class="form-control" type="number"/>
+            <p id="ergebnis"></p>
+        </div>
+        <div class="col-md-3">
+            <div class="btn-group-vertical" role="group" aria-label="Operation">
+                <button id="plusBtn" class="btn btn-info">+</button>
+                <button id="minusBtn" class="btn btn-info">-</button>
+                <button id="malBtn" class="btn btn-info">*</button>
+                <button id="teilBtn" class="btn btn-info">/</button>
+                <button id="rechteckFlaecheBtn" class="btn btn-info">
+                    Flächeninhalt (Rechteck)</button>
+                <button id="umfangbtn" class="btn btn-info">Umfang</button>
+                <button id="potenzbtn" class="btn btn-info">Potenz</button>
+                <button id="fakultätbtn" class="btn btn-info">Fakultät</button>
+                <button id="eulerbtn" class="btn btn-info">Euler</button>
+            </div>
+        </div>
+
+<footer>
+    <!-- onclick ruft die funktionen auf wird noch im footer verlinkt -->
+    <button class="btn btn-info" id="switchenter" >Dark/Light Mode</button>
+
+
+</footer>
+    </div>
+</div>
+</body>

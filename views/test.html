@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Usermanager</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../src/usermanager.js"></script>
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Unsere Seite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Stundenplan.html"> Stundenplan </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dasTeam.html" id="navbardrop" data-toggle="dropdown">
+                        Das Team
+
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Dennis Ksr</a>
+                        <a class="dropdown-item" href="#">Merve Damar</a>
+                        <a class="dropdown-item" href="#">Lennart Behrendt</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="workingexamples.html">Working Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usermanager.html">UserManager</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<h1>Usermanager</h1>
+<article>
+    <h2 >Nutzer hinzufuegen</h2>
+    <form id="formInput">
+        <label>Vorname<input type="text" placeholder="Vorname" id="inputFName" required></label>
+        <label>Nachname<input type="text" placeholder="Nachname" id="inputLName" required></label> <br>
+        <label>Username<input type="text" placeholder="Username" id="inputUName" required></label>
+        <label>Passwort<input type="password" placeholder="Passwort" id="inputPassword" required></label>
+        <button type="submit">Add</button>
+    </form>
+</article>
+
+<article id="editModal" style="display: none">
+    <h2 >Nutzer bearbeiten</h2>
+    <form id="formEdit">
+
+        <label >Username<input type="text" placeholder="Username" id="editUName" disabled required></label>
+        <label><input type="text" placeholder="Vorname" id="editFName" required></label>
+        <label> <input type="text" placeholder="Nachname" id="editLName" required></label><br>
+        <label>Altes Passwort <input type="text" placeholder="Altes Passwort" id="altPW"></label>
+        <label>Neues Passwort <input type="text" placeholder="Neues Passwort" id="neuPW"></label><br>
+        <label>Neues Passwort bestätigen <input type="text" placeholder="Neues Passwort bestätigen" id="neu PW2"></label><br>
+        <button id="editClose">Schließen</button>
+        <button type="submit">Speichern</button>
+
+
+    </form>
+
+</article>
+
+
+<article>
+    <h2>Nutzerliste</h2>
+    <table class="table">
+        <tr>
+            <th>Username</th>
+            <th>Nachname</th>
+            <th>Vorname</th>
+            <th>Aktionen</th>
+        </tr>
+        <tbody id="tableUser">
+
+        </tbody>
+    </table>
+</article>
+
+
+</body>
+</html>
